@@ -2,4 +2,7 @@ body {
     background-color: black;
     color: white;
 }
+article div {
+    background-color: #072424;
+}
 /* Here lies the homepage theme code */

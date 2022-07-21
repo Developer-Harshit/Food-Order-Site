@@ -1,9 +1,44 @@
-img {
-    width: 160px;
-    height: 140px;
-    object-fit: cover;
-    border: 2px solid saddlebrown;
+body {
+  margin: 0;
 }
-ul{
-    list-style: none;
+img {
+  width: 160px;
+  height: 140px;
+  object-fit: cover;
+  border: 2px solid saddlebrown;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul,
+.logo {
+  margin: 0px;
+}
+ul {
+  display: flex;
+}
+#iorderz {
+  justify-content: center;
+}
+#iorderz li article {
+  display: flex;
+}
+#iorderz h3,
+#iorderz p,
+#iorderz a {
+  padding: 0%;
+  margin-top: 0%;
+}
+main h2 {
+  text-align: center;
+}
+
+li {
+  margin: 1px;
 }
