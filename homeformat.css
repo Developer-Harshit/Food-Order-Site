@@ -1,0 +1,9 @@
+img {
+    width: 160px;
+    height: 140px;
+    object-fit: cover;
+    border: 2px solid saddlebrown;
+}
+ul{
+    list-style: none;
+}
