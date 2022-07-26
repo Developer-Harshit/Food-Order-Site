@@ -1,8 +1,47 @@
+html {
+  color: unset;
+}
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+  font-family: system-ui, monospace, sans-serif;
+}
+nav a,
+article a {
+  font-weight: 620;
+  font-size: 0.9rem;
+  color: #2bddd4;
+  text-decoration-line: none;
+}
+nav a {
+  font-weight: 600;
+  /* box-shadow: -2px -2px 2px #2bddd4; */
+}
+nav a:hover,
+article a:hover {
+  color: white;
+  box-shadow: -2px 1px 0px white;
+  background-color: #27c5c5;
+}
+h2 {
+  font-weight: 500;
+  box-shadow: -2px -2px 0px #2bddd4;
+}
+.logo a{
+  font-weight: 720;
+  font-size: 1.5rem;
+  text-decoration-line: none;
+  color: white;
+  font-family: system-ui,sans-serif;
+  /* color: #2bddd4; */
+  
+  text-shadow: 2px 2px 0px #05cbd1;
 }
 article div {
-    background-color: #072424;
+  background-color: #011616;
+}
+article p {
+  font-weight: 360;
+  font-size: 0.9rem;
 }
 /* Here lies the homepage theme code */

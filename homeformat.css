@@ -1,15 +1,18 @@
+html {
+  color: unset;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  /* 16px */
+}
 body {
   margin: 0;
 }
 img {
-  width: 160px;
-  height: 140px;
+  width: 14rem;
+  height: 11rem;
   object-fit: cover;
-  border: 2px solid saddlebrown;
-}
-ul {
-  list-style: none;
-  padding: 0px;
 }
 header {
   display: flex;
@@ -18,27 +21,104 @@ header {
 }
 header ul,
 .logo {
-  margin: 0px;
+  margin: 0rem;
+}
+nav a {
+  padding: 2px;
 }
 ul {
-  display: flex;
+  list-style: none;
+  padding: 0rem;
+  display: grid;
+  justify-content: center;
+  gap: 3%;
+}
+nav ul {
+  grid-template-columns: 1fr 1fr;
+}
+main ul {
+  gap: 5%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+h2 {
+  /* width: fit-content; */
+  margin: 1rem auto;
+  padding: 0.5rem;
+  align-self: center;
 }
 #iorderz {
-  justify-content: center;
+  justify-items: center;
 }
 #iorderz li article {
   display: flex;
+  flex-direction: column;
 }
 #iorderz h3,
 #iorderz p,
 #iorderz a {
-  padding: 0%;
-  margin-top: 0%;
+  padding: 0rem;
+  margin: 0.1rem 0rem;
+}
+article div {
+  width: 14rem;
+  height: max-content;
+}
+article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.2rem 0rem;
 }
 main h2 {
   text-align: center;
 }
-
+main section {
+  width: 60%;
+  margin: 58px auto;
+}
 li {
   margin: 1px;
+}
+#iorderz a {
+  margin: 0.8rem;
+  margin-left: 0.2rem;
+}
+
+@media (max-width: 48rem) {
+  main ul {
+    gap: 3%;
+    grid-template-columns: 1fr 1fr;
+  }
+  img,
+  article div {
+    width: 15rem;
+  }
+}
+@media (max-width: 30rem) {
+  main ul {
+    gap: none;
+    grid-template-columns: 1fr;
+  }
+  img,
+  article div {
+    width: 15.5rem;
+  }
+  #inav {
+    display: none;
+  }
+}
+@media (min-width: 75rem) {
+  nav a {
+    font-weight: 630;
+  }
+  ul {
+    gap: 4%;
+  }
+  h2 {
+    margin: 1rem auto;
+  }
+  img,
+  article div {
+    width: 19rem;
+  }
 }
